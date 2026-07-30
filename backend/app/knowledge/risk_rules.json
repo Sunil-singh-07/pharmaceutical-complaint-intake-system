@@ -1,0 +1,66 @@
+{
+  "Critical": {
+    "patient_safety": true
+  },
+  "High": {
+    "contamination": true
+  },
+  "Medium": {
+    "packaging_defect": true
+  },
+  "Low": {
+    "labeling_only": true
+  },
+  "priority_order": ["Critical", "High", "Medium", "Low"],
+  "default_priority": "Low",
+  "type_signals": {
+    "Foreign Particle": ["contamination", "patient_safety"],
+    "Damaged Seal": ["packaging_defect"],
+    "Leaking Bottle": ["packaging_defect"],
+    "Wrong Label": ["labeling_only"],
+    "Missing Label": ["labeling_only"],
+    "Broken Tablet": ["product_quality"],
+    "Discoloration": ["product_quality"],
+    "Cracked Capsule": ["product_quality"],
+    "Odor": ["product_quality"],
+    "Color Change": ["product_quality"],
+    "Leakage": ["product_quality"]
+  },
+  "category_signals": {
+    "Contamination": ["contamination", "patient_safety"],
+    "Packaging Defect": ["packaging_defect"],
+    "Labeling Defect": ["labeling_only"],
+    "Physical Defect": ["product_quality"],
+    "Product Quality": ["product_quality"]
+  },
+  "severity_signals": {
+    "Critical": ["patient_safety"],
+    "High": ["contamination"],
+    "Medium": ["packaging_defect"],
+    "Low": []
+  },
+  "priority_scores": {
+    "Critical": 90,
+    "High": 65,
+    "Medium": 40,
+    "Low": 15
+  },
+  "recommended_actions": {
+    "Critical": [
+      "Escalate immediately to QA management.",
+      "Quarantine the affected batch pending investigation.",
+      "Notify the Pharmacovigilance team without delay."
+    ],
+    "High": [
+      "Escalate to the QA supervisor within 24 hours.",
+      "Quarantine the affected batch pending review."
+    ],
+    "Medium": [
+      "Route the complaint to QA for standard review.",
+      "Document findings in the complaint file."
+    ],
+    "Low": [
+      "Log the complaint for routine QA review."
+    ]
+  }
+}

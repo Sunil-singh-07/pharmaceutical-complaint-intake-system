@@ -1,0 +1,31 @@
+{
+  "categories": {
+    "Physical Defect": [
+      "Broken Tablet",
+      "Discoloration",
+      "Cracked Capsule"
+    ],
+    "Packaging Defect": [
+      "Damaged Seal",
+      "Leaking Bottle"
+    ],
+    "Labeling Defect": [
+      "Wrong Label",
+      "Missing Label"
+    ],
+    "Contamination": [
+      "Foreign Particle"
+    ],
+    "Product Quality": [
+      "Odor",
+      "Color Change",
+      "Leakage"
+    ]
+  },
+  "risk_factors": [
+    "patient_safety",
+    "product_quality",
+    "packaging_integrity",
+    "regulatory_impact"
+  ]
+}
